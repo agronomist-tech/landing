@@ -1,0 +1,37 @@
+.links {
+	$self: &;
+
+	&__item {
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		white-space: nowrap;
+		padding: 10px 0 10px 35px;
+		background-position: center left;
+		background-repeat: no-repeat;
+		background-color: transparent;
+
+		&:not(:last-child) {
+			margin-right: 50px;
+			
+			@include media('<=sm') {
+				margin-right: 20px;
+
+			}
+		}
+		
+		&_doc {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-doc-view-white');
+			background-size: 21px 21px;
+		}
+		
+		&_grid {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-grid-view-white');
+			background-size: 20px 20px;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

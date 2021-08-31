@@ -1,0 +1,39 @@
+.footer {
+	$self: &;
+	
+	&__inner {
+		display: flex;
+		min-height: 55px;
+		padding: 50px 0;
+		align-items: center;
+
+		@include media('<=xs') {
+			justify-content: center;
+		}
+	}
+
+	&__logo {
+
+		> img {
+			display: block;
+		}
+
+		@include media('<=xs') {
+			display: none;
+		}
+	}
+
+	&__links {
+		margin: 0 auto;
+		font-size: 18px;
+
+		@include media('<=xs') {
+			display: none;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		padding: 10px 0;
+	}
+}

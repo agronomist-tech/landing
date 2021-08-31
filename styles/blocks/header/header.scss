@@ -1,0 +1,45 @@
+.header {
+	$self: &;
+	// margin-bottom: 50px;
+	position: relative;
+	z-index: 1;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		padding: 60px 0 0;
+		min-height: 55px;
+
+		@include media('<=xs') {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__logo {
+
+		> img {
+			display: block;
+		}
+	}
+
+	&__links {
+		margin: 0 auto;
+		font-size: 18px;
+
+		@include media('<=xxs') {
+			margin: 0 0 0 auto;
+			max-width: 160px;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		padding: 10px 0;
+
+		@include media('<=xs') {
+			justify-content: center;
+			padding-top: 50px;
+			width: 100%;
+		}
+	}
+}

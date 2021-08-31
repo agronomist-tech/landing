@@ -1,0 +1,123 @@
+.roadmap {
+	$self: &;
+	margin-bottom: 30px;
+
+	&__inner {
+		max-width: 1400px;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+	&__items {
+		display: flex;
+		margin: 0 -10px;
+		justify-content: space-between;
+
+		@include media('<=md') {
+			flex-wrap: wrap;
+		}
+
+		@include media('<=xs') {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		box-sizing: border-box;
+		text-align: center;
+		min-height: 130px;
+		width: 130px;
+		padding: 10px 10px 15px;
+		margin: 0 10px 40px;
+		border: 2px solid #888;
+		position: relative;
+		font-family: "GM", sans-serif;
+		line-height: 1.2;
+		font-size: 14px;
+		letter-spacing: -0.05em;
+		background-color: rgba(255, 255, 255, 0);
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+		span {
+			display: block;
+
+			&:first-child {
+				margin-bottom: 5px;
+			}
+		}
+	
+		&::after {
+			display: block;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-grey') center / auto no-repeat transparent;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, 100%);
+		}
+
+		&::before {
+			display: block;
+			content: '';
+			width: 60px;
+			height: 60px;
+			margin: 0 auto 5px;
+			background-position: center left;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			background-size: 60px 60px;
+		}
+
+		&_lamp::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-lamp-view-white');
+		}
+
+		&_community::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-community-view-white');
+		}
+
+		&_chip::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-chip-view-white');
+		}
+
+		&_hosting::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-hosting-view-white');
+		}
+
+		&_analytics::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-analytics-view-white');
+		}
+
+		&_blockchain::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-blockchain-view-white');
+		}
+	}
+
+	&__progress {
+		box-sizing: border-box;
+		display: block;
+		width: calc(100% - 100px);
+		margin: 0 auto;
+		height: 4px;
+		border-radius: 5px;
+		background-color: #fff;
+		overflow: hidden;
+
+		span {
+			display: block;
+			height: 100%;
+			background-color: #69F15D;
+			transition: width 0.5s ease;
+		}
+	}
+}

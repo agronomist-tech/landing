@@ -1,0 +1,44 @@
+.advantages {
+	$self: &;
+	background: url('/images/bg_smoke.png') center top 100px / auto no-repeat transparent;
+	margin-top: -330px;
+
+	&__inner {
+
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px 40px;
+		justify-content: space-around;
+		overflow: hidden;
+	}
+
+	&__item {
+		margin: 0 20px 30px;
+		max-width: 460px;
+		width: calc(100% / 2 - 40px);
+		
+		@include media('<=sm') {
+			width: calc(100% - 40px);
+		}
+
+		&:nth-child(even) {
+			@include slideInRight(
+				$fill: backwards
+			);
+		}
+		
+		&:nth-child(odd) {
+			@include slideInLeft(
+				$fill: backwards
+			);
+		}
+	}
+}

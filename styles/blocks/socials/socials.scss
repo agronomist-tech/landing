@@ -1,0 +1,28 @@
+.socials {
+	$self: &;
+	align-items: center;
+
+	&__item {
+		width: 21px;
+		height: 21px;
+		background-position: center left;
+		background-repeat: no-repeat;
+		background-color: transparent;
+
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+
+		&_tw {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc_tw-view-white');
+		}
+		
+		&_git {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc_git-view-white');
+		}
+		
+		&_discord {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc_discord-view-white');
+		}
+	}
+}
