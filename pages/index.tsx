@@ -64,7 +64,7 @@ export default function Home() {
                                 <AnimatedOnScroll animationIn="bounceInLeft">
                                     <h3 className="card__title">Multichain support</h3>
                                     <div className="card__content">
-                                        <span>Support of all popular chains</span>
+                                        <span>Support all popular chains</span>
                                         <ul className="card__items">
                                             <li className="card__item card__item_sln">Solana</li>
                                             <li className="card__item card__item_bsc">BSC</li>
@@ -80,7 +80,7 @@ export default function Home() {
                                 <AnimatedOnScroll animationIn="bounceInRight">
                                     <h3 className="card__title">Smart analytics for farming</h3>
                                     <div className="card__content">
-                                        <span>A many indicators for farm rating</span>
+                                        <span>Tons of indicators for farm rating</span>
                                         <ul className="card__items">
                                             <li className="card__item card__item_chk">APY/APR</li>
                                             <li className="card__item card__item_chk">Popularity</li>
@@ -95,7 +95,7 @@ export default function Home() {
                                 <AnimatedOnScroll animationIn="bounceInLeft">
                                     <h3 className="card__title">Notifications</h3>
                                     <div className="card__content">
-                                        <p>User defined and pre-defined markers for early actions. Configurable backends with custom decisions</p>
+                                        <p>Pre-set & customizable notification templates. Configurable backends for alerts</p>
                                     </div>
                                 </AnimatedOnScroll>
                             </div>
@@ -111,7 +111,7 @@ export default function Home() {
                             </div>
                             <div className="advantages__item card">
                                 <AnimatedOnScroll animationIn="bounceInLeft">
-                                    <h3 className="card__title">Government</h3>
+                                    <h3 className="card__title">Governance</h3>
                                     <div className="card__content">
                                         <p>Voting for the future features and project development</p>
                                     </div>
